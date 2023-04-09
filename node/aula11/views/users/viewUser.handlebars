@@ -1,0 +1,29 @@
+<h1>Todos os Usuários</h1>
+
+<ul class="usuarios">
+  {{#each users}}
+
+    <li>
+      <div class="info">
+        <label for="">{{this.nome}}</label><br>
+        <label for="">{{this.idade}}</label>
+      </div>
+      <div class="itens">
+        <a href="/users/edit/{{this.id}}">
+          {{> edit_user}}
+        </a>
+        <form action="/users/remove" method="post">
+          <input type="hidden" name="id" value="{{this.id}}">
+          <button type="submit">
+            {{> del_user}}
+          </button>
+        </form>
+      </div>
+    </li>
+
+  {{/each}}
+</ul>
+
+
+
+</div>
