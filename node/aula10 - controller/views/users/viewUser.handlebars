@@ -1,0 +1,17 @@
+{{!-- <h2>O usuário {{user.name}} tem {{user.age}} anos de idade! </h2>
+
+<a href="/">Home</a>
+<a href="/users/add">Novo Usuário</a> --}}
+
+  <h2>Usuários Cadastrados</h2>
+  {{#each users}}
+    <ul>
+      <li>
+        {{> users}}
+      </li>
+    </ul>
+  {{/each}}
+
+  {{!-- <a href="/">Home</a>
+
+{{/if}} --}}
