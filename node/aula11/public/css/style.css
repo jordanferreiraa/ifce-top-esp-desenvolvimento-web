@@ -40,7 +40,7 @@ form .btn {
   font-weight: 700;
   padding-top: 10px;
   padding-bottom: 25px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   transition: .3s;
 }
 
@@ -51,7 +51,7 @@ form .btn:hover {
 
 .botoes {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .btn2 {
@@ -62,6 +62,7 @@ form .btn:hover {
   padding: 8px 10px;
   text-decoration: none;
   transition: .3s;
+  width: min-content;
 }
 
 .btn2:hover {
@@ -78,9 +79,16 @@ ul.usuarios {
   justify-content: space-between;
   border: 1px solid #020e26;
   margin-bottom: 10px;
+  padding: 5px;
 }
 
 ul.usuarios li .info {
   display: flex;
   flex-direction: column;
+}
+
+ul.usuarios li .itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
