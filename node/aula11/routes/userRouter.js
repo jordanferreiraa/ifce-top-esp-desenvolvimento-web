@@ -5,6 +5,10 @@ const UserController = require('../controllers/UserController')
 
 router.get('/add', UserController.newUser)
 router.post('/add', UserController.newUserSave)
+
+router.get('/edit/:id', UserController.updateUser)
+router.post('/edit', UserController.updateUserSave)
+
 router.get('/allUsers', UserController.allUsers)
 router.get('/', UserController.home)
 

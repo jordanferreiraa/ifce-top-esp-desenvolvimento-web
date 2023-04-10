@@ -32,4 +32,17 @@ module.exports = class UserController {
     res.render('users/edit', { user })
   }
 
+  static async updateUserSave(req, res) {
+    const id = req.body.id
+    const user = {
+      nome: req.body.nome,
+      idade: req.body.idade
+    }
+    await User.update(user, { where: {id: id} })
+    .then(res.redirect('/users/allUsers'))
+    .catch((err) => {
+      console.log(err)
+    })
+  }
+
 }
