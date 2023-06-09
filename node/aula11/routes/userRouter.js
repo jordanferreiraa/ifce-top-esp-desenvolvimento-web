@@ -9,6 +9,8 @@ router.post('/add', UserController.newUserSave)
 router.get('/edit/:id', UserController.updateUser)
 router.post('/edit', UserController.updateUserSave)
 
+router.post('/remove', UserController.removeUser)
+
 router.get('/allUsers', UserController.allUsers)
 router.get('/', UserController.home)
 

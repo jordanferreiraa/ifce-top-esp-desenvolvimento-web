@@ -45,4 +45,13 @@ module.exports = class UserController {
     })
   }
 
+  static async removeUser(req, res) {
+    const id = req.body.id
+    await User.destroy({ where: {id: id} })
+    .then(res.redirect('/users/allUsers'))
+    .catch((err) => {
+      console.log(err)
+    })
+  }
+
 }
