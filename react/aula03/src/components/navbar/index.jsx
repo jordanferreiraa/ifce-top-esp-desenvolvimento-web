@@ -10,11 +10,11 @@ export default function MyNavBar () {
         <Navbar.Toggler target="#navbarSupportedContent" />
         <Collapse navbar id="navbarSupportedContent">
           <Navbar.Nav mr="auto">
-            <Nav.Item active>
-              <Nav.Link href="#">Home</Nav.Link>
+            <Nav.Item>
+              <Nav.Link href="/">Dashboard</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#">Link</Nav.Link>
+              <Nav.Link href="/user">Usuário</Nav.Link>
             </Nav.Item>
             <Nav.Item dropdown>
               <Nav.Link dropdownToggle>Dropdown</Nav.Link>
@@ -25,9 +25,9 @@ export default function MyNavBar () {
                 <Dropdown.Item>Something else</Dropdown.Item>
               </Dropdown.Menu>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link disabled>Disabled</Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
           </Navbar.Nav>
           <Form inline my="2 lg-0">
             <Form.Input type="search" placeholder="Search" mr="sm-2" />
